@@ -2,11 +2,14 @@ var readlineSync = require('readline-sync');
 
 var score = 0;
 
-var myAge = readlineSync.question('Is Ritesh is older than 20? ');
+var questionOne = 'Is Ritesh is older than 20? '
+var answerOne = "yes";
 
-console.log("you entered " + myAge);
+var userAnswer = readlineSync.question(questionOne);
 
-if (myAge === 'yes') {
+console.log("you entered " + userAnswer);
+
+if (userAnswer === answerOne) {
   console.log("you are right")
   score = score + 1;
   console.log("score is " + score);
@@ -16,11 +19,14 @@ if (myAge === 'yes') {
   console.log("score is " + score);
 }
 
-  var FavColor = readlineSync.question("Ritesh's fav color is black? ");
+  var questionTwo = "Ritesh's fav color is black?"; 
+  var answerTwo = "yes";
 
-  console.log("you entered " + FavColor);
+  var userAnswer = readlineSync.question(questionTwo);
+
+  console.log("you entered " + userAnswer);
   
-  if (FavColor === "yes") {
+  if (userAnswer === answerTwo) {
     console.log("You are right!") 
     score = score + 1;
     console.log("score is: " + score)
@@ -29,6 +35,20 @@ if (myAge === 'yes') {
     score = score - 1;
     console.log("score is: " + score)
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //var FavColor = readlineSync.question('Your fav color : - ');
